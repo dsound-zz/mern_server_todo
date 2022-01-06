@@ -7,8 +7,7 @@ const app = express()
 dotenv.config()
 app.use(express.json({ extended: true }))
 app.use(cors())
-const mongodb =
- "mongodb+srv://dsound:BaFldb8083@cluster0.zfhyq.mongodb.net/mern_stack_todo?retryWrites=true&w=majority"
+const mongodb = MONGODB
 app.get("/", (req, res) => {
  res.send("Welcome to server")
 })
